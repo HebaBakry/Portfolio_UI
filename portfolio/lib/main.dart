@@ -56,39 +56,40 @@ class PortfolioPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SizedBox(height: 86),
-          CircleAvatar(
-            radius: 80,
-            backgroundImage: AssetImage('assets/images/person.jpg'),
-          ),
-          SizedBox(height: 34),
-          Text(
-            'Hi, i am Heba,\nCreative\n Technologist',
-            style: Theme.of(context).textTheme.displayMedium,
-            textAlign: TextAlign.center,
-          ),
-          SizedBox(height: 24),
-          SizedBox(
-            width: 330,
-            child: Text(
-              'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-              style: Theme.of(context).textTheme.bodyMedium,
+      body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 83),
+            CircleAvatar(
+              radius: 80,
+              backgroundImage: AssetImage('assets/images/person.jpg'),
+            ),
+            SizedBox(height: 34),
+            Text(
+              'Hi, i am Heba,\nCreative\nTechnologist',
+              style: Theme.of(context).textTheme.displayMedium,
               textAlign: TextAlign.center,
             ),
-          ),
-          SizedBox(height: 24),
-          ElevatedButton(
-            onPressed: () {},
-            style: Theme.of(context).elevatedButtonTheme.style,
-            child: Text(
-              'Download Resume',
-              style: Theme.of(context).textTheme.displaySmall,
+            SizedBox(height: 24),
+            SizedBox(
+              width: 330,
+              child: Text(
+                'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+                style: Theme.of(context).textTheme.bodyMedium,
+                textAlign: TextAlign.center,
+              ),
             ),
-          ),
-        ],
+            SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'Download Resume',
+                style: Theme.of(context).textTheme.displaySmall,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
